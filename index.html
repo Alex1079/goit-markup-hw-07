@@ -19,6 +19,11 @@
             <div class="header-conteiner">
                 <nav class="header-nav">
                     <a href="./index.html" class="logo-first">WEB<span class="logo-second">STUDIO</span></a>
+                    <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                    <svg class="mobile-icon" aria-label="mobile menu switcher">
+                        <use href="./images/icons.svg#icon-menu-hamburger" class="icon-menu"></use>
+                    </svg>
+                </button>
                     <ul class="navigation">
                         <li><a href="index.html" class="link current">Studio</a></li>
                         <li><a href="portfolio.html" class="link">Portfolio</a></li>
@@ -104,9 +109,9 @@
             <div class="conteiner">
                 <h2 class="page-waw-doing">What are we doing</h2>
                 <ul class="foto-section">
-                    <li class="img-sl"><img src="./images/img1.jpg" alt="computer" width="360" height="300"></li>
-                    <li class="img-sl"><img src="./images/img2.jpg" alt="mobile software" width="360" height="300"></li>
-                    <li class="img-sl"><img src="./images/img3.jpg" alt="smartfhone" width="360" height="300"></li>
+                    <li class="img-sl"><img srcset="./images/img1.jpg 1x, ./images/img1@2x.jpg 2x" src="./images/img1.jpg" alt="computer" width="360"></li>
+                    <li class="img-sl"><img srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x" src="./images/img2.jpg" alt="mobile software" width="360"></li>
+                    <li class="img-sl"><img srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x" src="./images/img3.jpg" alt="smartfhone" width="360"></li>
                 </ul>
             </div>
         </section>
@@ -115,7 +120,7 @@
                 <h2 class="team">Our Team</h2>
                 <ul class="team-conteiner">
                     <li class="team-item">
-                        <img class="foto-tim-main-m" src="./images/img4.jpg" alt="Mark Guerrero" width="264" height="260">
+                        <img class="foto-tim-main-m" srcset="./images/img4.jpg 1x, ./images/img4@2x.jpg 2x" src="./images/img4.jpg" alt="Mark Guerrero" width="264">
                         <div class="employee">
                             <h3 class="piple">Mark Guerrero</h3>
                             <p class="paragraf-p">Product Designer</p>
@@ -136,7 +141,7 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="foto-tim-main-m" src="./images/img5.jpg" alt="Tom Ford" width="264" height="260">
+                        <img class="foto-tim-main-m" srcset="./images/img5.jpg 1x, ./images/img5@2x.jpg 2x" src="./images/img5.jpg" alt="Tom Ford" width="264">
                         <div class="employee">
                             <h3 class="piple">Tom Ford</h3>
                             <p class="paragraf-p">Frontend Developer</p>
@@ -157,7 +162,7 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="foto-tim-main-m" src="./images/img6.jpg" alt="Camila Garcia" width="264" height="260">
+                        <img class="foto-tim-main-m" srcset="./images/img6.jpg 1x, ./images/img6@2x.jpg 2x" src="./images/img6.jpg" alt="Camila Garcia" width="264">
                         <div class="employee">
                             <h3 class="piple">Camila Garcia</h3>
                             <p class="paragraf-p">Marketing</p>
@@ -178,7 +183,7 @@
                         </div>
                     </li>
                     <li class="team-item">
-                        <img class="foto-tim-main-m" src="./images/img7.jpg" alt="Daniel Wilson" width="264" height="260">
+                        <img class="foto-tim-main-m" srcset="./images/img7.jpg 1x, ./images/img7@2x.jpg 2x" src="./images/img7.jpg" alt="Daniel Wilson" width="264">
                         <div class="employee">
                             <h3 class="piple">Daniel Wilson</h3>
                             <p class="paragraf-p">UI Designer</p>
@@ -289,7 +294,7 @@
                         </svg>
                     </label>
                     <label class="modal-label">Phone
-                        <input type="number" name="phone" class="form-input" placeholder=" " required>
+                        <input type="tel" name="phone" class="form-input" placeholder=" " required>
                          <svg class="input-icon">
                              <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
@@ -316,7 +321,59 @@
             </form>
         </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+            <svg class="mobile-icon-close">
+                <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+        </button>
+        <div class="mobile-nav">
+            <ul class="mobile-menu list">
+                <li class="item"><a href="./index.html" class="link">Studio</a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                <li class="item"><a href="" class="link">Contacts</a></li>
+            </ul>
+            <div class="mobile-menu-contacts">
+                <ul class="mobile-auth-nav list">
+                    <li class="item"><a href="tel:+110001111111" class="tel link">+11 (000) 111-11-11</a></li>
+                    <li class="item"><a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a></li>
+                </ul>
+                <ul class="list soc-med-list">
+                    <li class="item">
+                        <a href="" class="soc-med-link">
+                            <svg class="soc-med-icon">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="soc-med-link">
+                            <svg class="soc-med-icon">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="soc-med-link">
+                            <svg class="soc-med-icon">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="item">
+                        <a href="" class="soc-med-link">
+                            <svg class="soc-med-icon">
+                                <use href="./images/icons.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
