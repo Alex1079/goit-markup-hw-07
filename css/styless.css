@@ -1,3 +1,16 @@
+:root{
+    --primary-text-color:#434455;
+    --secondary-text-color: #2E2F42;
+    --third-text-color: #E7E9FC;
+    
+    --primary-bg-color: #fff;
+    --second-bg-color: #F4F4FD;
+    
+
+    --accent-color:#4D5AE5;
+    --secondary-accent-color:#404BBF;
+    --customers-color:#8E8F99;;
+}
 body{  
     
     color: var(--primary-text-color);
@@ -7,7 +20,9 @@ body{
     
         
 }
-
+/* *{
+    outline: 1px solid green;
+} */
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     /* margin-bottom: 0; */
